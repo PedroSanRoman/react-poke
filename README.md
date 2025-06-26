@@ -1,23 +1,12 @@
-# Buscador de Pokémon con REACT
+# React + Vite
 
-Este proyecto consiste en crear un buscador de Pokémon utilizando React. 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Antes de empezar recuerda instalar todas las dependencias necesarias para el proyecto. Un npm i o créate tu propio proyecto React con vite.
+Currently, two official plugins are available:
 
-# ¿Cómo empezar?
-Crear en App.jsx toda la aplicación. Una vez hecha y viendo que funciona correctamente, refactorizaremos el código y crearemos módulos funcionales.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Instrucciones
+## Expanding the ESLint configuration
 
-- Usaremos un formulario para hacer peticiones a la API de pokemon, donde nos devolverá el pokemon que estemos buscando en ese momento. Si no existiera nos tiene que devolver un mensaje de `pokemon no encontrado`  
-- Utilizar estados para manejar el término de búsqueda, los resultados de la búsqueda, el estado de carga y los errores. Los que pienses que son necesarios.
-  *** PISTA: *** `useState` para guardar los cambios de cada uno de los estados
-- En la búsqueda tendremos que ir actualizando el cambio en el momento de cada escritura. Si escribimos el pokemon `Pikachu` si escribimos `P` hará búsqueda, `Pi`, siguiente búsqueda... y así hasta que encuentre el pokemon.
-  *** PISTA: *** `useEffect` para actualizar en cada momento la busqueda pasándole el parametro de cambio 
-- Mostrar los resultados de la búsqueda (nombre e imagen del Pokémon) en la interfaz de usuario. Puedes añadir más datos si lo deseas.
-- Manejar adecuadamente los casos de búsqueda vacía, resultados no encontrados y errores de la API.
-- Crea estilos CSS para tu aplicación según sea necesario. Puedes utilizar App.css para crearlos.
-
-*** Recursos adicionales ***
-
-Documentación de la PokeAPI: https://pokeapi.co/docs/v2
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
